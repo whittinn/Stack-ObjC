@@ -7,10 +7,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
 
--(void)insertNumber: (id)number;
-- (id)pop;
+@interface ViewController : UIViewController
+ @property (nonatomic,strong) NSMutableArray* mArray;
+-(void)push: (NSNumber *)number;
+- (NSNumber*)pop;
+- (NSArray*)getStack;
+
 
 
 @end

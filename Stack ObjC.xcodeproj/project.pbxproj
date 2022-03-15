@@ -15,8 +15,6 @@
 		8C5A221227DD580700DCFD9B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C5A221027DD580700DCFD9B /* LaunchScreen.storyboard */; };
 		8C5A221527DD580700DCFD9B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C5A221427DD580700DCFD9B /* main.m */; };
 		8C5A221F27DD580700DCFD9B /* Stack_ObjCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C5A221E27DD580700DCFD9B /* Stack_ObjCTests.m */; };
-		8C5A222927DD580700DCFD9B /* Stack_ObjCUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C5A222827DD580700DCFD9B /* Stack_ObjCUITests.m */; };
-		8C5A222B27DD580700DCFD9B /* Stack_ObjCUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C5A222A27DD580700DCFD9B /* Stack_ObjCUITestsLaunchTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,8 +50,6 @@
 		8C5A221A27DD580700DCFD9B /* Stack ObjCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Stack ObjCTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C5A221E27DD580700DCFD9B /* Stack_ObjCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Stack_ObjCTests.m; sourceTree = "<group>"; };
 		8C5A222427DD580700DCFD9B /* Stack ObjCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Stack ObjCUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8C5A222827DD580700DCFD9B /* Stack_ObjCUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Stack_ObjCUITests.m; sourceTree = "<group>"; };
-		8C5A222A27DD580700DCFD9B /* Stack_ObjCUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Stack_ObjCUITestsLaunchTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,7 +82,6 @@
 			children = (
 				8C5A220127DD580500DCFD9B /* Stack ObjC */,
 				8C5A221D27DD580700DCFD9B /* Stack ObjCTests */,
-				8C5A222727DD580700DCFD9B /* Stack ObjCUITests */,
 				8C5A220027DD580500DCFD9B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -125,15 +120,6 @@
 				8C5A221E27DD580700DCFD9B /* Stack_ObjCTests.m */,
 			);
 			path = "Stack ObjCTests";
-			sourceTree = "<group>";
-		};
-		8C5A222727DD580700DCFD9B /* Stack ObjCUITests */ = {
-			isa = PBXGroup;
-			children = (
-				8C5A222827DD580700DCFD9B /* Stack_ObjCUITests.m */,
-				8C5A222A27DD580700DCFD9B /* Stack_ObjCUITestsLaunchTests.m */,
-			);
-			path = "Stack ObjCUITests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -285,8 +271,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8C5A222927DD580700DCFD9B /* Stack_ObjCUITests.m in Sources */,
-				8C5A222B27DD580700DCFD9B /* Stack_ObjCUITestsLaunchTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

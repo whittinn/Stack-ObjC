@@ -7,42 +7,55 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()
+@interface ViewController()
 
 @end
 
 @implementation ViewController
+@synthesize mArray;
 
 
 
-NSMutableArray* mArray;
     int count;
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
+-(instancetype)init{
     
-    mArray = [[NSMutableArray alloc ]init];
-    
-    
-   
+    self = [super init];
+    if (self){
+        mArray = [[NSMutableArray alloc] init ];
     }
-
-
-
--(void)insertNumber: (id)number{
-
-    [mArray addObject:number];
-    NSLog(@"This arry contains the number %d",number);
-    }
-
-- (id)pop{
+    return self;
     
-    id value = [mArray lastObject];
-     [mArray  removeLastObject];
-    return value;
-    
-  
 }
+
+
+
+-(void)push: (NSNumber *)number{
+   [self.mArray addObject:number];
+    
+}
+
+
+- (NSNumber*)pop{
+    if (self.mArray.count > 0){
+        long index = (mArray.count - 1);
+        NSNumber *value = mArray[index];
+        [self.mArray removeLastObject];
+        return value;
+    }else{
+        return nil;
+    }
+    
+}
+
+
+- (NSArray*)getStack{
+    return self.mArray;
+}
+
+
+
+
 
 
 

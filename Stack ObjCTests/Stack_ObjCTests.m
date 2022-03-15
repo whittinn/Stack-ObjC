@@ -6,6 +6,7 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "ViewController.h"
 
 @interface Stack_ObjCTests : XCTestCase
 
@@ -13,24 +14,48 @@
 
 @implementation Stack_ObjCTests
 
+ViewController * vc = NULL;
+int salary = 5;
+bool value = false;
+
+
 - (void)setUp {
-    // Put setup code here. This method is called before the invocation of each test method in the class.
+    vc = [[ViewController alloc] init];
+   
+
+    
 }
 
 - (void)tearDown {
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
+    vc = NULL;
 }
 
-- (void)testExample {
-    // This is an example of a functional test case.
-    // Use XCTAssert and related functions to verify your tests produce the correct results.
+- (void)testIfArayHasObject{
+   
+    
+    [vc push:@1];
+    XCTAssertEqual([[vc mArray] count], 1);
+   
+    
+       
+    
+    
+    
+    
+  //Access Array
+    
+        
 }
 
-- (void)testPerformanceExample {
-    // This is an example of a performance test case.
-    [self measureBlock:^{
-        // Put the code you want to measure the time of here.
-    }];
+-(void)testIfArrayHasNoObject{
+    
+    [vc push:@1];
+    [vc push:@2];
+    XCTAssertEqual([vc pop], @2);
+    
 }
+
+
+
 
 @end
